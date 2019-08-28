@@ -1,4 +1,4 @@
-# ISYS3888-Excessive-dependence-
+# The Survivors squad - excessive mobile phone dependence Solution
 Students: 
 Yanbing Chen - 460332242
 
