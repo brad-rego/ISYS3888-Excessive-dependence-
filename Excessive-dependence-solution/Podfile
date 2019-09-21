@@ -6,6 +6,8 @@ target 'Excessive-dependence-solution' do
   use_frameworks!
 
   # Pods for Excessive-dependence-solution
+	pod 'Firebase/Core'
+	pod 'Firebase/Auth'
 
   target 'Excessive-dependence-solutionTests' do
     inherit! :search_paths
