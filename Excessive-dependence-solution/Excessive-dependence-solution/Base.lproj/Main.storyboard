@@ -20,12 +20,16 @@
                                 <rect key="frame" x="161" y="344" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log in"/>
+                                <connections>
+                                    <action selector="login_btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pAY-OF-Jno"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9c-t8-zwc">
                                 <rect key="frame" x="160" y="393" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
+                                    <action selector="signup_btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HQp-xO-KEU"/>
                                     <segue destination="mfc-RB-dMc" kind="show" id="FKj-ta-EbK"/>
                                 </connections>
                             </button>
