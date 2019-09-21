@@ -14,6 +14,12 @@
 		1C6E1042232A187200C4802E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C6E1040232A187200C4802E /* LaunchScreen.storyboard */; };
 		1C6E104D232A187200C4802E /* Excessive_dependence_solutionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6E104C232A187200C4802E /* Excessive_dependence_solutionTests.swift */; };
 		1C6E1058232A187200C4802E /* Excessive_dependence_solutionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6E1057232A187200C4802E /* Excessive_dependence_solutionUITests.swift */; };
+		1C6F45052335F78F00677B08 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C6F45042335F78F00677B08 /* GoogleService-Info.plist */; };
+		1C6F45062335F78F00677B08 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C6F45042335F78F00677B08 /* GoogleService-Info.plist */; };
+		1C6F45072335F78F00677B08 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C6F45042335F78F00677B08 /* GoogleService-Info.plist */; };
+		1F49528BD3C18BF42CB2EC52 /* Pods_Excessive_dependence_solutionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BC76EFCA6E3F2640839EAB /* Pods_Excessive_dependence_solutionTests.framework */; };
+		632C45DF669FA343F310A514 /* Pods_Excessive_dependence_solutionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78BD997FBEC5CCADE30FC9A /* Pods_Excessive_dependence_solutionUITests.framework */; };
+		E5640F864B2CC5EDF9721FB0 /* Pods_Excessive_dependence_solution.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394203E4A7A77D8A9ED6E3CD /* Pods_Excessive_dependence_solution.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17F4E86CE2993049EA95DE1B /* Pods-Excessive-dependence-solutionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Excessive-dependence-solutionTests.debug.xcconfig"; path = "Target Support Files/Pods-Excessive-dependence-solutionTests/Pods-Excessive-dependence-solutionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1C6E1034232A187100C4802E /* Excessive-dependence-solution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Excessive-dependence-solution.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C6E1037232A187100C4802E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C6E1039232A187100C4802E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,15 @@
 		1C6E1053232A187200C4802E /* Excessive-dependence-solutionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Excessive-dependence-solutionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C6E1057232A187200C4802E /* Excessive_dependence_solutionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Excessive_dependence_solutionUITests.swift; sourceTree = "<group>"; };
 		1C6E1059232A187200C4802E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C6F45042335F78F00677B08 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		394203E4A7A77D8A9ED6E3CD /* Pods_Excessive_dependence_solution.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Excessive_dependence_solution.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A8452448E84BB903CF4DAC1 /* Pods-Excessive-dependence-solution.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Excessive-dependence-solution.release.xcconfig"; path = "Target Support Files/Pods-Excessive-dependence-solution/Pods-Excessive-dependence-solution.release.xcconfig"; sourceTree = "<group>"; };
+		71BC76EFCA6E3F2640839EAB /* Pods_Excessive_dependence_solutionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Excessive_dependence_solutionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95FCDA339049145772F82D96 /* Pods-Excessive-dependence-solutionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Excessive-dependence-solutionTests.release.xcconfig"; path = "Target Support Files/Pods-Excessive-dependence-solutionTests/Pods-Excessive-dependence-solutionTests.release.xcconfig"; sourceTree = "<group>"; };
+		9B33E487F2DB6A53B9368897 /* Pods-Excessive-dependence-solutionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Excessive-dependence-solutionUITests.debug.xcconfig"; path = "Target Support Files/Pods-Excessive-dependence-solutionUITests/Pods-Excessive-dependence-solutionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B78BD997FBEC5CCADE30FC9A /* Pods_Excessive_dependence_solutionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Excessive_dependence_solutionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F696C03668C3353D587742E0 /* Pods-Excessive-dependence-solution.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Excessive-dependence-solution.debug.xcconfig"; path = "Target Support Files/Pods-Excessive-dependence-solution/Pods-Excessive-dependence-solution.debug.xcconfig"; sourceTree = "<group>"; };
+		FC106556FC333EDD186524EA /* Pods-Excessive-dependence-solutionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Excessive-dependence-solutionUITests.release.xcconfig"; path = "Target Support Files/Pods-Excessive-dependence-solutionUITests/Pods-Excessive-dependence-solutionUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5640F864B2CC5EDF9721FB0 /* Pods_Excessive_dependence_solution.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F49528BD3C18BF42CB2EC52 /* Pods_Excessive_dependence_solutionTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632C45DF669FA343F310A514 /* Pods_Excessive_dependence_solutionUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +100,8 @@
 				1C6E104B232A187200C4802E /* Excessive-dependence-solutionTests */,
 				1C6E1056232A187200C4802E /* Excessive-dependence-solutionUITests */,
 				1C6E1035232A187100C4802E /* Products */,
+				D4B6C15624E2E1CE5765A153 /* Pods */,
+				92C29EAA92CF26F53BC71930 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +124,7 @@
 				1C6E103E232A187200C4802E /* Assets.xcassets */,
 				1C6E1040232A187200C4802E /* LaunchScreen.storyboard */,
 				1C6E1043232A187200C4802E /* Info.plist */,
+				1C6F45042335F78F00677B08 /* GoogleService-Info.plist */,
 			);
 			path = "Excessive-dependence-solution";
 			sourceTree = "<group>";
@@ -125,6 +147,30 @@
 			path = "Excessive-dependence-solutionUITests";
 			sourceTree = "<group>";
 		};
+		92C29EAA92CF26F53BC71930 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				394203E4A7A77D8A9ED6E3CD /* Pods_Excessive_dependence_solution.framework */,
+				71BC76EFCA6E3F2640839EAB /* Pods_Excessive_dependence_solutionTests.framework */,
+				B78BD997FBEC5CCADE30FC9A /* Pods_Excessive_dependence_solutionUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4B6C15624E2E1CE5765A153 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F696C03668C3353D587742E0 /* Pods-Excessive-dependence-solution.debug.xcconfig */,
+				5A8452448E84BB903CF4DAC1 /* Pods-Excessive-dependence-solution.release.xcconfig */,
+				17F4E86CE2993049EA95DE1B /* Pods-Excessive-dependence-solutionTests.debug.xcconfig */,
+				95FCDA339049145772F82D96 /* Pods-Excessive-dependence-solutionTests.release.xcconfig */,
+				9B33E487F2DB6A53B9368897 /* Pods-Excessive-dependence-solutionUITests.debug.xcconfig */,
+				FC106556FC333EDD186524EA /* Pods-Excessive-dependence-solutionUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C6E105C232A187200C4802E /* Build configuration list for PBXNativeTarget "Excessive-dependence-solution" */;
 			buildPhases = (
+				323171118359D25E50D1257A /* [CP] Check Pods Manifest.lock */,
 				1C6E1030232A187100C4802E /* Sources */,
 				1C6E1031232A187100C4802E /* Frameworks */,
 				1C6E1032232A187100C4802E /* Resources */,
+				4F8B65207AE2EA42DFC4A83F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C6E105F232A187200C4802E /* Build configuration list for PBXNativeTarget "Excessive-dependence-solutionTests" */;
 			buildPhases = (
+				0C08AEF8B211187E4DE80076 /* [CP] Check Pods Manifest.lock */,
 				1C6E1044232A187200C4802E /* Sources */,
 				1C6E1045232A187200C4802E /* Frameworks */,
 				1C6E1046232A187200C4802E /* Resources */,
@@ -167,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C6E1062232A187200C4802E /* Build configuration list for PBXNativeTarget "Excessive-dependence-solutionUITests" */;
 			buildPhases = (
+				A80BC2F172240E24FCB8E415 /* [CP] Check Pods Manifest.lock */,
 				1C6E104F232A187200C4802E /* Sources */,
 				1C6E1050232A187200C4802E /* Frameworks */,
 				1C6E1051232A187200C4802E /* Resources */,
@@ -230,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C6E1042232A187200C4802E /* LaunchScreen.storyboard in Resources */,
+				1C6F45052335F78F00677B08 /* GoogleService-Info.plist in Resources */,
 				1C6E103F232A187200C4802E /* Assets.xcassets in Resources */,
 				1C6E103D232A187100C4802E /* Main.storyboard in Resources */,
 			);
@@ -239,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C6F45062335F78F00677B08 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,10 +298,97 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C6F45072335F78F00677B08 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C08AEF8B211187E4DE80076 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Excessive-dependence-solutionTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		323171118359D25E50D1257A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Excessive-dependence-solution-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F8B65207AE2EA42DFC4A83F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Excessive-dependence-solution/Pods-Excessive-dependence-solution-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Excessive-dependence-solution/Pods-Excessive-dependence-solution-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Excessive-dependence-solution/Pods-Excessive-dependence-solution-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A80BC2F172240E24FCB8E415 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Excessive-dependence-solutionUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C6E1030232A187100C4802E /* Sources */ = {
@@ -430,6 +569,7 @@
 		};
 		1C6E105D232A187200C4802E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F696C03668C3353D587742E0 /* Pods-Excessive-dependence-solution.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +587,7 @@
 		};
 		1C6E105E232A187200C4802E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A8452448E84BB903CF4DAC1 /* Pods-Excessive-dependence-solution.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +605,7 @@
 		};
 		1C6E1060232A187200C4802E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17F4E86CE2993049EA95DE1B /* Pods-Excessive-dependence-solutionTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +626,7 @@
 		};
 		1C6E1061232A187200C4802E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95FCDA339049145772F82D96 /* Pods-Excessive-dependence-solutionTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +647,7 @@
 		};
 		1C6E1063232A187200C4802E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B33E487F2DB6A53B9368897 /* Pods-Excessive-dependence-solutionUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +667,7 @@
 		};
 		1C6E1064232A187200C4802E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC106556FC333EDD186524EA /* Pods-Excessive-dependence-solutionUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
