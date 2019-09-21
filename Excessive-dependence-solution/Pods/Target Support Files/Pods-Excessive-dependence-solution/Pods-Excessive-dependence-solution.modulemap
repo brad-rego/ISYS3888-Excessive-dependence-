@@ -1,0 +1,6 @@
+framework module Pods_Excessive_dependence_solution {
+  umbrella header "Pods-Excessive-dependence-solution-umbrella.h"
+
+  export *
+  module * { export * }
+}
