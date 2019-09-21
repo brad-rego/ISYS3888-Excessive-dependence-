@@ -21,7 +21,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log in"/>
                                 <connections>
-                                    <action selector="login_btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pAY-OF-Jno"/>
+                                    <action selector="login_btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hyV-am-UAu"/>
+                                    <segue destination="8Y0-zr-IQN" kind="show" id="P41-wb-Mmz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9c-t8-zwc">
@@ -29,8 +30,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
-                                    <action selector="signup_btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HQp-xO-KEU"/>
-                                    <segue destination="mfc-RB-dMc" kind="show" id="FKj-ta-EbK"/>
+                                    <action selector="signup_btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="npU-qn-RJX"/>
+                                    <segue destination="mfc-RB-dMc" kind="show" id="A4i-Hb-Axc"/>
                                 </connections>
                             </button>
                         </subviews>
