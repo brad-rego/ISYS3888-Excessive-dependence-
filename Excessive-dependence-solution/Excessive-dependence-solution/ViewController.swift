@@ -16,5 +16,12 @@ class ViewController: UIViewController {
 	}
 
 
+	//MARK: Actions
+
+	@IBAction func login_btn(_ sender: Any) {
+	}
+	
+	@IBAction func signup_btn(_ sender: Any) {
+	}
 }
 

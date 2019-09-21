@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C07ABFC233613FC00B1BEF9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C07ABFB233613FC00B1BEF9 /* LoginViewController.swift */; };
+		1C07ABFE2336141100B1BEF9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C07ABFD2336141100B1BEF9 /* SignUpViewController.swift */; };
 		1C6E1038232A187100C4802E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6E1037232A187100C4802E /* AppDelegate.swift */; };
 		1C6E103A232A187100C4802E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6E1039232A187100C4802E /* ViewController.swift */; };
 		1C6E103D232A187100C4802E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C6E103B232A187100C4802E /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		17F4E86CE2993049EA95DE1B /* Pods-Excessive-dependence-solutionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Excessive-dependence-solutionTests.debug.xcconfig"; path = "Target Support Files/Pods-Excessive-dependence-solutionTests/Pods-Excessive-dependence-solutionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1C07ABFB233613FC00B1BEF9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1C07ABFD2336141100B1BEF9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1C6E1034232A187100C4802E /* Excessive-dependence-solution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Excessive-dependence-solution.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C6E1037232A187100C4802E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C6E1039232A187100C4802E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 				1C6E1040232A187200C4802E /* LaunchScreen.storyboard */,
 				1C6E1043232A187200C4802E /* Info.plist */,
 				1C6F45042335F78F00677B08 /* GoogleService-Info.plist */,
+				1C07ABFB233613FC00B1BEF9 /* LoginViewController.swift */,
+				1C07ABFD2336141100B1BEF9 /* SignUpViewController.swift */,
 			);
 			path = "Excessive-dependence-solution";
 			sourceTree = "<group>";
@@ -167,7 +173,6 @@
 				9B33E487F2DB6A53B9368897 /* Pods-Excessive-dependence-solutionUITests.debug.xcconfig */,
 				FC106556FC333EDD186524EA /* Pods-Excessive-dependence-solutionUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -395,8 +400,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C07ABFC233613FC00B1BEF9 /* LoginViewController.swift in Sources */,
 				1C6E103A232A187100C4802E /* ViewController.swift in Sources */,
 				1C6E1038232A187100C4802E /* AppDelegate.swift in Sources */,
+				1C07ABFE2336141100B1BEF9 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
