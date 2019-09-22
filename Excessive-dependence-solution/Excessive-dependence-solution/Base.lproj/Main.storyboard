@@ -42,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1196" y="134"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="MLa-Jq-Gab">
@@ -113,7 +113,6 @@
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="signUp_btn:" destination="mfc-RB-dMc" eventType="touchUpInside" id="oMN-GO-WMH"/>
-                                    <segue destination="drg-Xs-SWW" kind="presentation" identifier="signupaccepted" id="vaV-7N-VDo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -152,6 +151,7 @@
                         <outlet property="email_txt" destination="APp-mW-bZe" id="flS-K9-NhZ"/>
                         <outlet property="password_txt" destination="sjX-Q4-Xhb" id="RQD-pJ-w1G"/>
                         <outlet property="retype_password_txt" destination="yTv-25-6T2" id="kjf-na-1Ww"/>
+                        <segue destination="drg-Xs-SWW" kind="presentation" identifier="signupaccepted" modalPresentationStyle="fullScreen" id="W2Z-Da-VPJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7u-NS-muw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -163,7 +163,7 @@
             <objects>
                 <viewController id="drg-Xs-SWW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vuM-di-3gC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="pbR-8f-kjF"/>
@@ -187,7 +187,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log in"/>
                                 <connections>
-                                    <segue destination="drg-Xs-SWW" kind="presentation" id="WtS-ei-ISF"/>
+                                    <action selector="Login_btn:" destination="8Y0-zr-IQN" eventType="touchUpInside" id="gXV-IW-Tpu"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9Q-rB-AKj">
@@ -221,6 +221,11 @@
                         <viewLayoutGuide key="safeArea" id="Ayb-nG-kgB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Xt0-Uj-Aue"/>
+                    <connections>
+                        <outlet property="email_txt" destination="1ZX-av-j8p" id="oM7-8f-7TK"/>
+                        <outlet property="password_txt" destination="pq6-NT-4NC" id="oxi-Ff-c8O"/>
+                        <segue destination="drg-Xs-SWW" kind="presentation" identifier="signed_in" modalPresentationStyle="fullScreen" id="XLh-ZK-Vn3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XQY-vX-rbI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -246,6 +251,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WtS-ei-ISF"/>
+        <segue reference="W2Z-Da-VPJ"/>
     </inferredMetricsTieBreakers>
 </document>
