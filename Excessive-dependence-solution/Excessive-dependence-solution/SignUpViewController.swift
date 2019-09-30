@@ -33,8 +33,8 @@ class SignUpViewController: UIViewController{
 			let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
 			alertController.addAction(defaultAction)
 		self.present(alertController, animated: true, completion: nil)
-
 		}
+		
 		if let email = email_txt.text, email.isEmpty{
 			let alertController = UIAlertController(title: "Empty Fields", message: "Please enter email", preferredStyle: .alert)
 				let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
