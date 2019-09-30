@@ -67,7 +67,7 @@ class SignUpViewController: UIViewController{
 		// register user to  firebase
 		Auth.auth().createUser(withEmail: email_txt.text!, password: password_txt.text!){ (user, error) in
 		 if error == nil {
-		   self.performSegue(withIdentifier: "signupaccepted", sender: self)
+		   self.performSegue(withIdentifier: "stage2", sender: self)
 						}
 		 else{
 		   let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)

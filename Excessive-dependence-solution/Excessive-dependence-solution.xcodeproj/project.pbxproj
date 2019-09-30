@@ -19,6 +19,7 @@
 		1C6F45052335F78F00677B08 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C6F45042335F78F00677B08 /* GoogleService-Info.plist */; };
 		1C6F45062335F78F00677B08 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C6F45042335F78F00677B08 /* GoogleService-Info.plist */; };
 		1C6F45072335F78F00677B08 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C6F45042335F78F00677B08 /* GoogleService-Info.plist */; };
+		1C83E8B02341E6A20071BA15 /* SignUp_stage_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C83E8AF2341E6A20071BA15 /* SignUp_stage_2.swift */; };
 		1F49528BD3C18BF42CB2EC52 /* Pods_Excessive_dependence_solutionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BC76EFCA6E3F2640839EAB /* Pods_Excessive_dependence_solutionTests.framework */; };
 		632C45DF669FA343F310A514 /* Pods_Excessive_dependence_solutionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78BD997FBEC5CCADE30FC9A /* Pods_Excessive_dependence_solutionUITests.framework */; };
 		E5640F864B2CC5EDF9721FB0 /* Pods_Excessive_dependence_solution.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394203E4A7A77D8A9ED6E3CD /* Pods_Excessive_dependence_solution.framework */; };
@@ -59,6 +60,7 @@
 		1C6E1057232A187200C4802E /* Excessive_dependence_solutionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Excessive_dependence_solutionUITests.swift; sourceTree = "<group>"; };
 		1C6E1059232A187200C4802E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C6F45042335F78F00677B08 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1C83E8AF2341E6A20071BA15 /* SignUp_stage_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp_stage_2.swift; sourceTree = "<group>"; };
 		394203E4A7A77D8A9ED6E3CD /* Pods_Excessive_dependence_solution.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Excessive_dependence_solution.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A8452448E84BB903CF4DAC1 /* Pods-Excessive-dependence-solution.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Excessive-dependence-solution.release.xcconfig"; path = "Target Support Files/Pods-Excessive-dependence-solution/Pods-Excessive-dependence-solution.release.xcconfig"; sourceTree = "<group>"; };
 		71BC76EFCA6E3F2640839EAB /* Pods_Excessive_dependence_solutionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Excessive_dependence_solutionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,7 @@
 				1C6F45042335F78F00677B08 /* GoogleService-Info.plist */,
 				1C07ABFB233613FC00B1BEF9 /* LoginViewController.swift */,
 				1C07ABFD2336141100B1BEF9 /* SignUpViewController.swift */,
+				1C83E8AF2341E6A20071BA15 /* SignUp_stage_2.swift */,
 			);
 			path = "Excessive-dependence-solution";
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C07ABFC233613FC00B1BEF9 /* LoginViewController.swift in Sources */,
+				1C83E8B02341E6A20071BA15 /* SignUp_stage_2.swift in Sources */,
 				1C6E103A232A187100C4802E /* ViewController.swift in Sources */,
 				1C6E1038232A187100C4802E /* AppDelegate.swift in Sources */,
 				1C07ABFE2336141100B1BEF9 /* SignUpViewController.swift in Sources */,
