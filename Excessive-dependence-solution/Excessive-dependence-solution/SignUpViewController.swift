@@ -81,6 +81,12 @@ class SignUpViewController: UIViewController{
 		
 	}
 	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		var vc = segue.destination as! SignUp_stage_2_ViewController
+		let email = email_txt.text!
+		vc.username = email
+	}
+	
 	
 	
 }

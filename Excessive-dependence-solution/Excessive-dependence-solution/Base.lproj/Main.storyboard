@@ -39,6 +39,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="PcE-oR-2bm"/>
+                    <connections>
+                        <segue destination="drg-Xs-SWW" kind="presentation" identifier="alreadyLoggedin" id="qrf-0y-iWz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -182,6 +185,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next Step"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5d9-M9-7HZ">
+                                <rect key="frame" x="172" y="376" width="41" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="fjb-m7-0z7"/>
@@ -189,20 +199,56 @@
                     <navigationItem key="navigationItem" id="ul6-MV-Qor"/>
                     <connections>
                         <outlet property="CountryPicker" destination="wNa-ab-fIw" id="ym5-eu-NOS"/>
+                        <outlet property="nameLabel" destination="5d9-M9-7HZ" id="X0K-ed-VBx"/>
+                        <segue destination="4ut-I9-40z" kind="show" id="VdA-Xh-yUX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E6f-7y-MuI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3432.8000000000002" y="-790.25487256371821"/>
         </scene>
+        <!--Sign Up stage3 view Controller-->
+        <scene sceneID="16P-wm-6IS">
+            <objects>
+                <viewController id="4ut-I9-40z" customClass="SignUp_stage3_viewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aPe-qX-Z6Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a reigon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qvh-B4-IAH">
+                                <rect key="frame" x="60" y="115" width="114" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fpA-aZ-ItY">
+                                <rect key="frame" x="0.0" y="160" width="375" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFc-kh-Yen">
+                                <rect key="frame" x="153" y="476" width="90" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next Step"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="QXW-BP-Lj1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0yR-av-s89"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5tM-it-gHV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4498" y="-825"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="xkY-Cb-cma">
             <objects>
                 <viewController id="drg-Xs-SWW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vuM-di-3gC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="pbR-8f-kjF"/>
                     </view>
                     <navigationItem key="navigationItem" id="EZf-Ap-Sif"/>
@@ -266,7 +312,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XQY-vX-rbI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2533.5999999999999" y="408.84557721139436"/>
+            <point key="canvasLocation" x="2534" y="616"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jfp-Nw-hCc">
@@ -287,4 +333,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="qrf-0y-iWz"/>
+    </inferredMetricsTieBreakers>
 </document>

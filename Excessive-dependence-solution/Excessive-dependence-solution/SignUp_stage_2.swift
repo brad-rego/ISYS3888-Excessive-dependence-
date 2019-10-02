@@ -6,16 +6,23 @@
 //  Copyright © 2019 The Survivors squad. All rights reserved.
 //
 
+
 import UIKit
 import Foundation
 
 class SignUp_stage_2_ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
+	
+	var username = ""
+	
+	@IBOutlet weak var nameLabel: UILabel!
+	
 	
 	@IBOutlet weak var CountryPicker: UIPickerView!
 	let countries = ["Australia", "New Zealand", "United States","United Kingdom"]
 	override func viewDidLoad() {
         super.viewDidLoad()
         
+		nameLabel.text = username
         CountryPicker.delegate = self
         CountryPicker.dataSource = self
     }
