@@ -85,10 +85,9 @@ class SignUpViewController: UIViewController{
 		let vc = segue.destination as! SignUp_stage_2_ViewController
 		let email = email_txt.text!
 		let first =  F_name_txt.text!
-		let password_c = password_txt.text!
+		
 		vc.Email = email
 		vc.name = first
-		vc.password = password_c
 		
 	}
 	

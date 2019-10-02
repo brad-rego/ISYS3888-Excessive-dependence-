@@ -39,9 +39,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="PcE-oR-2bm"/>
-                    <connections>
-                        <segue destination="drg-Xs-SWW" kind="presentation" identifier="alreadyLoggedin" id="qrf-0y-iWz"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -202,8 +199,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a reigon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qvh-B4-IAH">
-                                <rect key="frame" x="60" y="115" width="114" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a University" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qvh-B4-IAH">
+                                <rect key="frame" x="60" y="115" width="142" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -213,11 +210,6 @@
                                 <rect key="frame" x="0.0" y="160" width="375" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFc-kh-Yen">
-                                <rect key="frame" x="153" y="476" width="90" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next Step"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="QXW-BP-Lj1"/>
@@ -225,27 +217,61 @@
                     <navigationItem key="navigationItem" id="0yR-av-s89"/>
                     <connections>
                         <outlet property="reigon_picker" destination="fpA-aZ-ItY" id="IRA-XA-Ic5"/>
+                        <segue destination="oz7-W6-glY" kind="show" identifier="stage4" id="bpQ-aq-ewX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5tM-it-gHV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4498" y="-825"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="xkY-Cb-cma">
             <objects>
-                <viewController id="drg-Xs-SWW" sceneMemberID="viewController">
+                <viewController id="drg-Xs-SWW" customClass="HomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vuM-di-3gC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ub-d7-NK3">
+                                <rect key="frame" x="0.0" y="594" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="TM1-ar-eTU">
+                                        <leftBarButtonItems>
+                                            <barButtonItem style="plain" id="Sa3-CB-vwM">
+                                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YCW-a0-FMr">
+                                                    <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                </button>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" id="FzF-lG-Tgm">
+                                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yKy-42-md4">
+                                                    <rect key="frame" x="107" y="7" width="83" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                </button>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" id="d3T-DF-Xr1">
+                                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HeE-ER-vzb">
+                                                    <rect key="frame" x="198" y="7" width="83" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Profile"/>
+                                                </button>
+                                            </barButtonItem>
+                                        </leftBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="pbR-8f-kjF"/>
                     </view>
                     <navigationItem key="navigationItem" id="EZf-Ap-Sif"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2P0-w8-2cs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3667" y="-52"/>
+            <point key="canvasLocation" x="6814" y="177"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="VWN-eP-9df">
@@ -297,7 +323,7 @@
                     <connections>
                         <outlet property="email_txt" destination="1ZX-av-j8p" id="oM7-8f-7TK"/>
                         <outlet property="password_txt" destination="pq6-NT-4NC" id="oxi-Ff-c8O"/>
-                        <segue destination="drg-Xs-SWW" kind="presentation" identifier="signed_in" modalPresentationStyle="fullScreen" id="XLh-ZK-Vn3"/>
+                        <segue destination="drg-Xs-SWW" kind="modal" identifier="signed_in" modalPresentationStyle="fullScreen" id="XLh-ZK-Vn3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XQY-vX-rbI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -322,8 +348,74 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
+        <!--Sign Up stage4 View Controller-->
+        <scene sceneID="rXe-WN-w4f">
+            <objects>
+                <viewController id="oz7-W6-glY" customClass="SignUp_stage_4_ViewController" customModule="Excessive_dependence_solution" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0s4-RV-ISM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a Faculty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yvm-ek-h0H">
+                                <rect key="frame" x="60" y="51" width="121" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xjk-cY-5dK">
+                                <rect key="frame" x="0.0" y="96" width="375" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="OTj-J9-JZb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QXF-fg-6uw"/>
+                    <connections>
+                        <outlet property="Faculty_picker" destination="xjk-cY-5dK" id="dSH-vs-J2N"/>
+                        <segue destination="da6-xD-CPP" kind="show" identifier="finalStage" id="RRN-fZ-ea8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kNd-hV-K7s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5630" y="-825"/>
+        </scene>
+        <!--Sign Up stage5 View Controller-->
+        <scene sceneID="8Uc-31-ZTU">
+            <objects>
+                <viewController id="da6-xD-CPP" customClass="SignUp_stage_5_ViewController" customModule="Excessive_dependence_solution" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oAL-Qi-HSe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a Degree" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUw-PH-VoP">
+                                <rect key="frame" x="76" y="85" width="122" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ek9-YR-g5Y">
+                                <rect key="frame" x="16" y="130" width="343" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="MWS-MU-y7x"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qu8-JO-N1t"/>
+                    <connections>
+                        <outlet property="degree_picker" destination="ek9-YR-g5Y" id="XzS-iO-jP6"/>
+                        <segue destination="drg-Xs-SWW" kind="modal" identifier="logged_in" modalPresentationStyle="fullScreen" id="1Ga-9z-RhY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eBK-Hp-JqD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6813.6000000000004" y="-825.33733133433293"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qrf-0y-iWz"/>
+        <segue reference="1Ga-9z-RhY"/>
     </inferredMetricsTieBreakers>
 </document>

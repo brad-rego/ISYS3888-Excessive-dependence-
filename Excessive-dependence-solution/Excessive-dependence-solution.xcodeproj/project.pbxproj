@@ -10,6 +10,9 @@
 		1C07ABFC233613FC00B1BEF9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C07ABFB233613FC00B1BEF9 /* LoginViewController.swift */; };
 		1C07ABFE2336141100B1BEF9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C07ABFD2336141100B1BEF9 /* SignUpViewController.swift */; };
 		1C5EFC11234469E7007F9744 /* SignUp_stage_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5EFC10234469E7007F9744 /* SignUp_stage_3.swift */; };
+		1C5EFC13234480E6007F9744 /* SignUp_stage_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5EFC12234480E6007F9744 /* SignUp_stage_4.swift */; };
+		1C5EFC15234489EA007F9744 /* SignUp_stage_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5EFC14234489EA007F9744 /* SignUp_stage_5.swift */; };
+		1C5EFC172344A14C007F9744 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5EFC162344A14C007F9744 /* HomeViewController.swift */; };
 		1C6E1038232A187100C4802E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6E1037232A187100C4802E /* AppDelegate.swift */; };
 		1C6E103A232A187100C4802E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6E1039232A187100C4802E /* ViewController.swift */; };
 		1C6E103D232A187100C4802E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C6E103B232A187100C4802E /* Main.storyboard */; };
@@ -48,6 +51,9 @@
 		1C07ABFB233613FC00B1BEF9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1C07ABFD2336141100B1BEF9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1C5EFC10234469E7007F9744 /* SignUp_stage_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp_stage_3.swift; sourceTree = "<group>"; };
+		1C5EFC12234480E6007F9744 /* SignUp_stage_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp_stage_4.swift; sourceTree = "<group>"; };
+		1C5EFC14234489EA007F9744 /* SignUp_stage_5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp_stage_5.swift; sourceTree = "<group>"; };
+		1C5EFC162344A14C007F9744 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1C6E1034232A187100C4802E /* Excessive-dependence-solution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Excessive-dependence-solution.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C6E1037232A187100C4802E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C6E1039232A187100C4802E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +143,9 @@
 				1C07ABFD2336141100B1BEF9 /* SignUpViewController.swift */,
 				1C83E8AF2341E6A20071BA15 /* SignUp_stage_2.swift */,
 				1C5EFC10234469E7007F9744 /* SignUp_stage_3.swift */,
+				1C5EFC12234480E6007F9744 /* SignUp_stage_4.swift */,
+				1C5EFC14234489EA007F9744 /* SignUp_stage_5.swift */,
+				1C5EFC162344A14C007F9744 /* HomeViewController.swift */,
 			);
 			path = "Excessive-dependence-solution";
 			sourceTree = "<group>";
@@ -410,6 +419,9 @@
 				1C07ABFC233613FC00B1BEF9 /* LoginViewController.swift in Sources */,
 				1C83E8B02341E6A20071BA15 /* SignUp_stage_2.swift in Sources */,
 				1C6E103A232A187100C4802E /* ViewController.swift in Sources */,
+				1C5EFC15234489EA007F9744 /* SignUp_stage_5.swift in Sources */,
+				1C5EFC172344A14C007F9744 /* HomeViewController.swift in Sources */,
+				1C5EFC13234480E6007F9744 /* SignUp_stage_4.swift in Sources */,
 				1C6E1038232A187100C4802E /* AppDelegate.swift in Sources */,
 				1C07ABFE2336141100B1BEF9 /* SignUpViewController.swift in Sources */,
 			);

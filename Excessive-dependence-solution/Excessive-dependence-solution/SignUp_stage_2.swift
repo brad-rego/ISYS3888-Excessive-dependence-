@@ -14,7 +14,6 @@ class SignUp_stage_2_ViewController: UIViewController, UIPickerViewDelegate, UIP
 	
 	var name = ""
 	var Email = ""
-	var password = ""
 	
 	
 	
@@ -44,6 +43,8 @@ class SignUp_stage_2_ViewController: UIViewController, UIPickerViewDelegate, UIP
     func pickerView(_ CountryPicker: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return countries[row]
     }
+	
+	//checks whats selected
 	func pickerView(_ CountryPicker: UIPickerView, didSelectRow row: Int, inComponent component: Int ){
 		picked = countries[row]
 		if picked != "Select Country"{
@@ -63,7 +64,6 @@ class SignUp_stage_2_ViewController: UIViewController, UIPickerViewDelegate, UIP
 		let vc = segue.destination as! SignUp_stage_3_ViewController
 		vc.name = name
 		vc.Email = Email
-		vc.password = password
 		vc.country = picked
 		
 		

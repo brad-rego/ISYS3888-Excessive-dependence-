@@ -13,8 +13,9 @@ class SignUp_stage_3_ViewController: UIViewController, UIPickerViewDelegate, UIP
 	
 	var name = ""
 	var Email = ""
-	var password = ""
 	var country = ""
+	
+	var selectedUni = ""
 
 	//MARK: Actions
 	@IBOutlet weak var reigon_picker: UIPickerView!
@@ -28,10 +29,10 @@ class SignUp_stage_3_ViewController: UIViewController, UIPickerViewDelegate, UIP
         reigon_picker.dataSource = self
     }
 
-	let Aus = ["Univeristy of Sydney", "University of New South Wales", "University of Western Sydney"]
-	let NZ = ["University of Aukland", "University of Canterbury", "University of Otago"]
-	let US = ["MIT", "Harvard", "Stanford University"]
-	let UK = ["edinburgh University", "University of Cambridge", "University of Aberdeen"]
+	let Aus = ["University", "Univeristy of Sydney", "University of New South Wales", "University of Western Sydney"]
+	let NZ = ["University","University of Aukland", "University of Canterbury", "University of Otago"]
+	let US = ["University","MIT", "Harvard", "Stanford University"]
+	let UK = ["University","edinburgh University", "University of Cambridge", "University of Aberdeen"]
 	
 
 	
@@ -71,6 +72,42 @@ class SignUp_stage_3_ViewController: UIViewController, UIPickerViewDelegate, UIP
 			}
 			return US[row]
     }
+	
+	func pickerView(_ reigon_picker: UIPickerView, didSelectRow row: Int, inComponent component: Int ){
+		if country == "Australia"{
+			selectedUni =  Aus[row]
+		}
+		if country == "New Zealand"{
+			selectedUni = NZ[row]
+			
+		}
+		if country == "United Kingdom"{
+			selectedUni = UK[row]
+		}
+		else{
+			selectedUni = US[row]
+		}
+		if selectedUni != "University"{
+			self.performSegue(withIdentifier: "stage4", sender: self)
+
+		}
+
+
+	}
+	
+	
+	
+	
+	
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		let vc = segue.destination as! SignUp_stage_4_ViewController
+		vc.name = name
+		vc.Email = Email
+		vc.country = country
+		vc.uni = selectedUni
+		
+	}
 
 
 }
