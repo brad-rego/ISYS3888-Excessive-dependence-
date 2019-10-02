@@ -12,17 +12,18 @@ import Foundation
 
 class SignUp_stage_2_ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
 	
-	var username = ""
+	var name = ""
+	var Email = ""
+	var password = ""
 	
-	@IBOutlet weak var nameLabel: UILabel!
 	
 	
 	@IBOutlet weak var CountryPicker: UIPickerView!
-	let countries = ["Australia", "New Zealand", "United States","United Kingdom"]
+	let countries = ["Select Country", "Australia", "New Zealand", "United States","United Kingdom"]
+	var picked = ""
 	override func viewDidLoad() {
         super.viewDidLoad()
         
-		nameLabel.text = username
         CountryPicker.delegate = self
         CountryPicker.dataSource = self
     }
@@ -43,5 +44,31 @@ class SignUp_stage_2_ViewController: UIViewController, UIPickerViewDelegate, UIP
     func pickerView(_ CountryPicker: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return countries[row]
     }
+	func pickerView(_ CountryPicker: UIPickerView, didSelectRow row: Int, inComponent component: Int ){
+		picked = countries[row]
+		if picked != "Select Country"{
+			self.performSegue(withIdentifier: "stage3", sender: self)
+
+		}
+
+
+	}
+
+	
+	
+	
+
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		let vc = segue.destination as! SignUp_stage_3_ViewController
+		vc.name = name
+		vc.Email = Email
+		vc.password = password
+		vc.country = picked
+		
+		
+		
+	}
+	
 }
 
