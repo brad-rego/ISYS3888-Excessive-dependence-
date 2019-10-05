@@ -24,7 +24,7 @@ class ChooseCharacterController: UIViewController, UITableViewDelegate  ,UITable
 	var degree = ""
 	var chosen = ""
 	
-	
+	//People to choose from based on faculty
 	let comsciList = ["Ada Lovelace", "person 2", "person3"]
 	let engoList = ["person 1", "person 2", "person 3"]
 	let scienceList = ["person 1", "person 2", "person 3"]
@@ -60,7 +60,7 @@ class ChooseCharacterController: UIViewController, UITableViewDelegate  ,UITable
 		}
 		return cell
 	}
-	
+	//once user chooses person, add to database and then  segue to logged in home page
 	public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		if faculty == "Computer Science"{
 //			print(self.comsciList[indexPath.row])
