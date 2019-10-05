@@ -84,7 +84,7 @@ class SignUp_stage_3_ViewController: UIViewController, UIPickerViewDelegate, UIP
 		if country == "United Kingdom"{
 			selectedUni = UK[row]
 		}
-		else{
+		if country == "United States"{
 			selectedUni = US[row]
 		}
 		if selectedUni != "University"{

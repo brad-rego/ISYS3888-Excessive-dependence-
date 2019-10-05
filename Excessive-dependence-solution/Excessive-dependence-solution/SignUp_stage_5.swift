@@ -53,7 +53,7 @@ class SignUp_stage_5_ViewController: UIViewController, UIPickerViewDelegate, UIP
 		if faculty == "Computer Science"{
 			return Compsci.count
 		}
-		if country == "Engineering"{
+		if faculty == "Engineering"{
 			return engo.count
 			
 		}
@@ -86,29 +86,26 @@ class SignUp_stage_5_ViewController: UIViewController, UIPickerViewDelegate, UIP
 			selectedDegree = science[row]
 		}
 		if selectedDegree != "Degree"{
-			addUser()
-			self.performSegue(withIdentifier: "logged_in", sender: self)
+//			addUser()
+			self.performSegue(withIdentifier: "choose_character", sender: self)
 
 		}
 
 
 	}
 	
-	func addUser(){
-		
-		let userAdd = ["Name": name, "Email": Email, "Country": country, "University": uni, "Faculty": faculty, "Degree" :selectedDegree]
-		ref.child("Users").childByAutoId().setValue(userAdd)
+
+
+
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		let vc = segue.destination as! ChooseCharacterController
+		vc.name = name
+		vc.Email = Email
+		vc.country = country
+		vc.uni = uni
+		vc.faculty = faculty
+		vc.degree = selectedDegree
+
 	}
-
-
-//	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//		let vc = segue.destination as! SignUp_stage_5_ViewController
-//		vc.name = name
-//		vc.Email = Email
-//		vc.country = country
-//		vc.uni = uni
-//		vc.faculty = faculty
-//
-//	}
 	
 }

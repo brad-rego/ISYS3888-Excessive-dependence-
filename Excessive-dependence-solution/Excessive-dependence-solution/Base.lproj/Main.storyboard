@@ -421,54 +421,44 @@
                     <navigationItem key="navigationItem" id="Qu8-JO-N1t"/>
                     <connections>
                         <outlet property="degree_picker" destination="ek9-YR-g5Y" id="XzS-iO-jP6"/>
-                        <segue destination="drg-Xs-SWW" kind="modal" identifier="logged_in" modalPresentationStyle="fullScreen" id="1Ga-9z-RhY"/>
+                        <segue destination="8O6-Mr-tVd" kind="show" identifier="choose_character" id="n3R-VF-Xxz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eBK-Hp-JqD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6814" y="-790"/>
         </scene>
-        <!--Choose Character View Controller-->
-        <scene sceneID="A7d-DC-y4H">
+        <!--Choose Character Controller-->
+        <scene sceneID="ejT-1s-wOt">
             <objects>
-                <viewController id="Y9P-MW-BIP" customClass="choose_Character_ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="f37-55-rlN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a Degree" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mk5-dK-Y6n">
-                                <rect key="frame" x="44" y="85" width="122" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="bUl-70-7oU"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Wx-Ng-6hn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7766" y="-790"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="eb0-mg-e1d">
-            <objects>
-                <tableViewController id="RfO-2U-MZb" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="C23-rW-3qe">
+                <tableViewController id="8O6-Mr-tVd" customClass="ChooseCharacterController" customModule="Excessive_dependence_solution" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yaq-9m-RIc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="vhR-U5-36J">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vhR-U5-36J" id="UCV-mw-DDU">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="RfO-2U-MZb" id="gne-3a-Ybd"/>
-                            <outlet property="delegate" destination="RfO-2U-MZb" id="1hL-yj-Mgg"/>
+                            <outlet property="dataSource" destination="8O6-Mr-tVd" id="OEg-ko-AUW"/>
+                            <outlet property="delegate" destination="8O6-Mr-tVd" id="wQA-6v-Kcx"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="x58-08-LBl"/>
+                    <connections>
+                        <segue destination="drg-Xs-SWW" kind="modal" identifier="sign_in_completed" modalPresentationStyle="fullScreen" id="eDt-Xy-0nc"/>
+                    </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xcp-VI-zMD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gz4-P8-ne5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8593" y="-992"/>
+            <point key="canvasLocation" x="7841" y="-790"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="SGy-qo-z1O">
@@ -517,6 +507,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1Ga-9z-RhY"/>
+        <segue reference="eDt-Xy-0nc"/>
     </inferredMetricsTieBreakers>
 </document>

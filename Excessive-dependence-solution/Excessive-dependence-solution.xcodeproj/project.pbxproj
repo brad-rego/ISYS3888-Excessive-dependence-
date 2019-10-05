@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1C07ABFC233613FC00B1BEF9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C07ABFB233613FC00B1BEF9 /* LoginViewController.swift */; };
 		1C07ABFE2336141100B1BEF9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C07ABFD2336141100B1BEF9 /* SignUpViewController.swift */; };
+		1C4C73DA234838F600FD1A54 /* chooseCharacter_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4C73D9234838F600FD1A54 /* chooseCharacter_ViewController.swift */; };
 		1C5EFC11234469E7007F9744 /* SignUp_stage_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5EFC10234469E7007F9744 /* SignUp_stage_3.swift */; };
 		1C5EFC13234480E6007F9744 /* SignUp_stage_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5EFC12234480E6007F9744 /* SignUp_stage_4.swift */; };
 		1C5EFC15234489EA007F9744 /* SignUp_stage_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5EFC14234489EA007F9744 /* SignUp_stage_5.swift */; };
@@ -50,6 +51,7 @@
 		17F4E86CE2993049EA95DE1B /* Pods-Excessive-dependence-solutionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Excessive-dependence-solutionTests.debug.xcconfig"; path = "Target Support Files/Pods-Excessive-dependence-solutionTests/Pods-Excessive-dependence-solutionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1C07ABFB233613FC00B1BEF9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1C07ABFD2336141100B1BEF9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		1C4C73D9234838F600FD1A54 /* chooseCharacter_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooseCharacter_ViewController.swift; sourceTree = "<group>"; };
 		1C5EFC10234469E7007F9744 /* SignUp_stage_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp_stage_3.swift; sourceTree = "<group>"; };
 		1C5EFC12234480E6007F9744 /* SignUp_stage_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp_stage_4.swift; sourceTree = "<group>"; };
 		1C5EFC14234489EA007F9744 /* SignUp_stage_5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp_stage_5.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				1C5EFC12234480E6007F9744 /* SignUp_stage_4.swift */,
 				1C5EFC14234489EA007F9744 /* SignUp_stage_5.swift */,
 				1C5EFC162344A14C007F9744 /* HomeViewController.swift */,
+				1C4C73D9234838F600FD1A54 /* chooseCharacter_ViewController.swift */,
 			);
 			path = "Excessive-dependence-solution";
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C5EFC11234469E7007F9744 /* SignUp_stage_3.swift in Sources */,
+				1C4C73DA234838F600FD1A54 /* chooseCharacter_ViewController.swift in Sources */,
 				1C07ABFC233613FC00B1BEF9 /* LoginViewController.swift in Sources */,
 				1C83E8B02341E6A20071BA15 /* SignUp_stage_2.swift in Sources */,
 				1C6E103A232A187100C4802E /* ViewController.swift in Sources */,
