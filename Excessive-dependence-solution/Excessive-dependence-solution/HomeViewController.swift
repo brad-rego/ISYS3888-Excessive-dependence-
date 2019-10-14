@@ -13,7 +13,15 @@ import Firebase
 
 class HomeViewController: UIViewController, UITextFieldDelegate{
 	
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+	}
 	//MARK: Properties
 
-
+	@IBAction func profile_btn(_ sender: Any) {
+		
+		self.performSegue(withIdentifier: "profile", sender: self)
+	}
+	
 }
