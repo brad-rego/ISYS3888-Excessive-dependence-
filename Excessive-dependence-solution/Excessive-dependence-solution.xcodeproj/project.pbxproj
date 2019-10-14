@@ -51,6 +51,7 @@
 		17F4E86CE2993049EA95DE1B /* Pods-Excessive-dependence-solutionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Excessive-dependence-solutionTests.debug.xcconfig"; path = "Target Support Files/Pods-Excessive-dependence-solutionTests/Pods-Excessive-dependence-solutionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1C07ABFB233613FC00B1BEF9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1C07ABFD2336141100B1BEF9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		1C36065D234C464500CF3608 /* Excessive-dependence-solutionDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Excessive-dependence-solutionDebug.entitlements"; sourceTree = "<group>"; };
 		1C4C73D9234838F600FD1A54 /* chooseCharacter_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooseCharacter_ViewController.swift; sourceTree = "<group>"; };
 		1C5EFC10234469E7007F9744 /* SignUp_stage_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp_stage_3.swift; sourceTree = "<group>"; };
 		1C5EFC12234480E6007F9744 /* SignUp_stage_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp_stage_4.swift; sourceTree = "<group>"; };
@@ -134,6 +135,7 @@
 		1C6E1036232A187100C4802E /* Excessive-dependence-solution */ = {
 			isa = PBXGroup;
 			children = (
+				1C36065D234C464500CF3608 /* Excessive-dependence-solutionDebug.entitlements */,
 				1C6E1037232A187100C4802E /* AppDelegate.swift */,
 				1C6E1039232A187100C4802E /* ViewController.swift */,
 				1C6E103B232A187100C4802E /* Main.storyboard */,
@@ -603,7 +605,10 @@
 			baseConfigurationReference = F696C03668C3353D587742E0 /* Pods-Excessive-dependence-solution.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Excessive-dependence-solution/Excessive-dependence-solutionDebug.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SC9Y82NSRX;
 				INFOPLIST_FILE = "Excessive-dependence-solution/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -611,6 +616,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example..Excessive-dependence-solution";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -621,7 +627,9 @@
 			baseConfigurationReference = 5A8452448E84BB903CF4DAC1 /* Pods-Excessive-dependence-solution.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SC9Y82NSRX;
 				INFOPLIST_FILE = "Excessive-dependence-solution/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -629,6 +637,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example..Excessive-dependence-solution";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
