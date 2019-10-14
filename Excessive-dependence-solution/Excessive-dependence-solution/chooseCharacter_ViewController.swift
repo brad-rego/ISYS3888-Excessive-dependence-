@@ -28,6 +28,7 @@ class ChooseCharacterController: UIViewController, UITableViewDelegate  ,UITable
 	let comsciList = ["Ada Lovelace", "person 2", "person3"]
 	let engoList = ["person 1", "person 2", "person 3"]
 	let scienceList = ["person 1", "person 2", "person 3"]
+	let artsList = ["person 1", "person2"]
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		ref = Database.database().reference()
@@ -42,6 +43,9 @@ class ChooseCharacterController: UIViewController, UITableViewDelegate  ,UITable
 				return engoList.count
 				
 			}
+		if faculty == "Arts"{
+			return artsList.count
+		}
 			
 			return scienceList.count
 	}
@@ -57,6 +61,9 @@ class ChooseCharacterController: UIViewController, UITableViewDelegate  ,UITable
 		
 		if faculty == "Science"{
 			cell.textLabel?.text = scienceList[indexPath.row]
+		}
+		if faculty == "Arts"{
+			cell.textLabel?.text = artsList[indexPath.row]
 		}
 		return cell
 	}
@@ -77,6 +84,12 @@ class ChooseCharacterController: UIViewController, UITableViewDelegate  ,UITable
 
 
 		}
+		if faculty == "Arts"{
+			chosen = artsList[indexPath.row]
+			addUser()
+			self.performSegue(withIdentifier: "sign_in_completed", sender: self)
+		}
+		
 		
 		if faculty == "Science"{
 //			print(scienceList[indexPath.row])

@@ -29,7 +29,7 @@ class SignUp_stage_4_ViewController: UIViewController, UIPickerViewDelegate, UIP
         Faculty_picker.dataSource = self
     }
 	
-	let faculty = ["Faculty", "Computer Science", "Engineering", "Science"]
+	let faculty = ["Faculty","Arts", "Computer Science", "Engineering", "Science"]
 	
 	
 	override func didReceiveMemoryWarning() {

@@ -39,6 +39,7 @@ class SignUp_stage_5_ViewController: UIViewController, UIPickerViewDelegate, UIP
 	let Compsci = ["Degree", "Bachelor of Computer Science", "Bachelor of Advanced computing"]
 	let engo = ["Degree", "Bachelor of Civil Engineering", "Bachelor of Electricial Engineering"]
 	let science = ["Degree", "Bachelor of Science", "Bachelor of Medical science"]
+	let arts = ["Degree", "Bachelor of Arts"]
 	
 	override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -57,6 +58,9 @@ class SignUp_stage_5_ViewController: UIViewController, UIPickerViewDelegate, UIP
 			return engo.count
 			
 		}
+		if faculty == "Arts"{
+			return arts.count
+		}
 		
 		return science.count
     }
@@ -68,6 +72,10 @@ class SignUp_stage_5_ViewController: UIViewController, UIPickerViewDelegate, UIP
 			if faculty == "Engineering"{
 				return engo[row]
 				
+			}
+			if faculty == "Arts"{
+				return arts[row]
+			
 			}
 			
 			return science[row]
@@ -81,6 +89,10 @@ class SignUp_stage_5_ViewController: UIViewController, UIPickerViewDelegate, UIP
 			selectedDegree = engo[row]
 			
 		}
+		if faculty == "Arts"{
+			selectedDegree = arts[row]
+		}
+			
 		
 		else{
 			selectedDegree = science[row]
