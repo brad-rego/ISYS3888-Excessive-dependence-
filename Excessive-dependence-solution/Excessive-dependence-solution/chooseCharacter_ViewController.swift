@@ -110,6 +110,12 @@ class ChooseCharacterController: UIViewController, UITableViewDelegate  ,UITable
 		ref.child("Users").childByAutoId().setValue(userAdd)
 	}
 	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		let vc = segue.destination as! HomeViewController
+//		vc.Email = Email
+
+	}
+	
 
 }
 
