@@ -12,7 +12,7 @@ import FirebaseDatabase
 
 
 class ChooseCharacterController: UIViewController, UITableViewDelegate  ,UITableViewDataSource{
-	
+
 	var ref: DatabaseReference!
 
 	//items passed from last stage
@@ -23,7 +23,7 @@ class ChooseCharacterController: UIViewController, UITableViewDelegate  ,UITable
 	var faculty = ""
 	var degree = ""
 	var chosen = ""
-	
+
 	//People to choose from based on faculty
 	let comsciList = ["Ada Lovelace", "person 2", "person3"]
 	let engoList = ["person 1", "person 2", "person 3"]
@@ -41,12 +41,12 @@ class ChooseCharacterController: UIViewController, UITableViewDelegate  ,UITable
 			}
 			if faculty == "Engineering"{
 				return engoList.count
-				
+
 			}
 		if faculty == "Arts"{
 			return artsList.count
 		}
-			
+
 			return scienceList.count
 	}
 	public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -56,9 +56,9 @@ class ChooseCharacterController: UIViewController, UITableViewDelegate  ,UITable
 		}
 		if faculty == "Engineering"{
 			cell.textLabel?.text = engoList[indexPath.row]
-			
+
 		}
-		
+
 		if faculty == "Science"{
 			cell.textLabel?.text = scienceList[indexPath.row]
 		}
@@ -89,8 +89,8 @@ class ChooseCharacterController: UIViewController, UITableViewDelegate  ,UITable
 			addUser()
 			self.performSegue(withIdentifier: "sign_in_completed", sender: self)
 		}
-		
-		
+
+
 		if faculty == "Science"{
 //			print(scienceList[indexPath.row])
 			chosen = scienceList[indexPath.row]
@@ -99,23 +99,22 @@ class ChooseCharacterController: UIViewController, UITableViewDelegate  ,UITable
 
 
 		}
-		
+
 	}
-	
-	
+
+
 	//todo add user
 	func addUser(){
 
 		let userAdd = ["Name": name, "Email": Email, "Country": country, "University": uni, "Faculty": faculty, "Degree" :degree, "chosenCharacter": chosen ]
 		ref.child("Users").childByAutoId().setValue(userAdd)
 	}
-	
+
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		let vc = segue.destination as! HomeViewController
 //		vc.Email = Email
 
 	}
-	
+
 
 }
-

@@ -14,33 +14,33 @@ import Firebase
 
 
 class HomeViewController: UIViewController, UITextFieldDelegate{
-	
+
 	var ref: DatabaseReference!
 	var Email = ""
 	override func viewDidLoad() {
         super.viewDidLoad()
 		ref = Database.database().reference(withPath: "User")
 
-		
+
     }
 
 //	let capitalCities = db.collection("cities").whereField("capital", isEqualTo: true)
 
 
-	
-	
-	
 
 
-	
+
+
+
+
 //	override func viewDidLoad() {
 //		super.viewDidLoad()
 //	}
 	//MARK: Properties
 
 	@IBAction func profile_btn(_ sender: Any) {
-		
+
 		self.performSegue(withIdentifier: "profile", sender: self)
 	}
-	
+
 }
