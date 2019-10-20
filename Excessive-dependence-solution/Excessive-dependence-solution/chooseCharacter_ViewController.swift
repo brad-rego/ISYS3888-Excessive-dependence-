@@ -112,7 +112,7 @@ class ChooseCharacterController: UIViewController, UITableViewDelegate  ,UITable
 
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		let vc = segue.destination as! HomeViewController
-//		vc.Email = Email
+		vc.Email = Email
 
 	}
 
