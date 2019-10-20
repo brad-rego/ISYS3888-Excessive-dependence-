@@ -6,7 +6,7 @@ Xiao Han- 470136795
 
 Georgina Isaac- 470381214
 
-Bradley Rego -470384190
+Bradley Rego - 470384190 - developer of prototype
 
 Yuzen Tebakari-Chan -460381000
 
