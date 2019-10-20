@@ -227,7 +227,7 @@
         <!--Home View Controller-->
         <scene sceneID="xkY-Cb-cma">
             <objects>
-                <viewController id="drg-Xs-SWW" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController id="drg-Xs-SWW" customClass="HomeViewController" customModule="Excessive_dependence_solution" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vuM-di-3gC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -275,10 +275,30 @@
                         <viewLayoutGuide key="safeArea" id="pbR-8f-kjF"/>
                     </view>
                     <navigationItem key="navigationItem" id="EZf-Ap-Sif"/>
+                    <connections>
+                        <segue destination="TKj-Cw-K9U" kind="show" id="Uu8-MT-NK5"/>
+                        <segue destination="gfc-7W-G9O" kind="show" id="5NB-ZA-sRZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2P0-w8-2cs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6661.6000000000004" y="156.97151424287858"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ywU-qr-jLi">
+            <objects>
+                <viewController id="wkB-UR-8Hn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jJe-N5-bpL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="7wW-Fz-9Gw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LcL-ww-eCb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9XA-Lc-PKw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6734" y="1101"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3NA-wX-PQn">
@@ -501,25 +521,41 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V5S-4C-JLE">
-                                <rect key="frame" x="67" y="116" width="240" height="128"/>
+                                <rect key="frame" x="67" y="230" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="Bhe-60-yyX"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbX-vL-tym">
-                                <rect key="frame" x="166" y="275" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="quote" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbX-vL-tym">
+                                <rect key="frame" x="166" y="389" width="71" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47B-d0-cyj">
+                                <rect key="frame" x="142" y="527" width="95" height="30"/>
+                                <state key="normal" title="Current Goals"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytR-35-yMm">
+                                <rect key="frame" x="142" y="571" width="95" height="30"/>
+=======
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47B-d0-cyj">
                                 <rect key="frame" x="142" y="393" width="95" height="30"/>
                                 <state key="normal" title="Current Goals"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytR-35-yMm">
                                 <rect key="frame" x="142" y="437" width="95" height="30"/>
+>>>>>>> 7e45659beb55943efedc020fcc1d26764f7997a8
                                 <state key="normal" title="Past Goals"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TE8-Zb-KUb" customClass="name">
+                                <rect key="frame" x="166" y="115" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -539,11 +575,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZwW-b7-fpt"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="Q20-f6-AYL"/>
+                    <navigationItem key="navigationItem" title="Title" id="Ovn-Z1-5Ql"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DVZ-n7-GRE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8572" y="177"/>
+            <point key="canvasLocation" x="8572" y="176.76161919040482"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
