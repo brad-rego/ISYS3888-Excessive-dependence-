@@ -25,7 +25,7 @@ class ChooseCharacterController: UIViewController, UITableViewDelegate  ,UITable
 	var chosen = ""
 
 	//People to choose from based on faculty
-	let comsciList = ["Ada Lovelace", "person 2", "person3"]
+	let comsciList = ["James Gosling", "Ada Lovelace", "person3"]
 	let engoList = ["person 1", "person 2", "person 3"]
 	let scienceList = ["person 1", "person 2", "person 3"]
 	let artsList = ["person 1", "person2"]
