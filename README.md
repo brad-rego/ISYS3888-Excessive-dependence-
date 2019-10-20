@@ -12,7 +12,7 @@ Yuzen Tebakari-Chan -460381000
 
 We are creating a mobile phone application that reduces excessive mobile phone dependence in a friendly way by allowing students to achieve their goals and giving them rewards for achieving their goals.
 
-We have used POD files and Google's Firebase to create this application in XCODE
+We have used POD files and Google's Firebase to create this application in Xcode
 please see https://guides.cocoapods.org/using/the-podfile.html and https://firebase.google.com 
 
 
