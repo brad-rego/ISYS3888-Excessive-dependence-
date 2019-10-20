@@ -19,7 +19,7 @@ please see https://guides.cocoapods.org/using/the-podfile.html and https://fireb
 ## Notes
   - This is a prototype, this is not the final version of our product.
 
-## TO EDIT: 
+### TO EDIT: 
 
 please use 'Excessive-dependence-solution.workspace' to add any modifications.
 
