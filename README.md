@@ -1,5 +1,6 @@
 # The Survivors squad - excessive mobile phone dependence Solution
-Students: 
+
+## Students
 Yanbing Chen - 460332242
 
 Xiao Han- 470136795
