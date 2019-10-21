@@ -299,6 +299,7 @@
                                 </state>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pbR-8f-kjF"/>
                     </view>
                     <navigationItem key="navigationItem" id="EZf-Ap-Sif"/>
