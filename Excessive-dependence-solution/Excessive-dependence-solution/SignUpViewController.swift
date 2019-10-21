@@ -11,7 +11,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class SignUpViewController: UIViewController{
+class SignUpViewController: UIViewController, UITextFieldDelegate{
 	
 	//MARK: Properties
 	
@@ -22,6 +22,10 @@ class SignUpViewController: UIViewController{
 	
 	
 	override func viewDidLoad() {
+		F_name_txt.delegate = self
+		email_txt.delegate = self
+		password_txt.delegate = self
+		retype_password_txt.delegate = self
 		super.viewDidLoad()
 	}
 	
@@ -89,6 +93,10 @@ class SignUpViewController: UIViewController{
 		vc.Email = email
 		vc.name = first
 		
+	}
+	func textFieldShouldReturn(_ textField: UITextField) -> Bool {   //delegate method
+		textField.resignFirstResponder()
+		return true
 	}
 	
 	
