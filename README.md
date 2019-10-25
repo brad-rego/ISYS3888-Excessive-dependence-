@@ -2,7 +2,7 @@
 
 This project was developed for our ISYS3888 Capstone project 'Understanding people’s excessive dependence on mobile phones'
 
-##Development Team:
+## Development Team:
 Yanbing Chen - 460332242
 
 Xiao Han- 470136795
