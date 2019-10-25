@@ -1,5 +1,8 @@
 # The Survivors squad - excessive mobile phone dependence Solution
-Students: 
+
+This project was developed for our ISYS3888 Capstone project 'Understanding people’s excessive dependence on mobile phones'
+
+##Development Team: 
 Yanbing Chen - 460332242
 
 Xiao Han- 470136795
@@ -24,5 +27,7 @@ please see https://guides.cocoapods.org/using/the-podfile.html and https://fireb
 please use 'Excessive-dependence-solution.workspace' to add any modifications.
 
 
-### project proposal
+### Project proposal
 https://drive.google.com/open?id=1hY3QngB9uPfJqmQ-GRf5w1S6dRb2UWCg
+
+###Final Project report
